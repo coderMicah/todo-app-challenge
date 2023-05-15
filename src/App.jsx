@@ -14,11 +14,11 @@ function App() {
           src="../src/assets/bg-desktop-dark.jpg"
           alt=""
         />
-        <div className="lg:-translate-y-[200px]  mx-auto px-4 max-w-2xl">
+        <div className=" lg:-translate-y-[200px] mx-auto px-4 max-w-2xl">
           <AddTodoInput />
           <TodoLayout />
           <Togglers />
-          <p className="mt-5 text-center text-gray-500">
+          <p className="mt-5 text-center text-gray-400">
             Drag and drop to reorder list
           </p>
         </div>
