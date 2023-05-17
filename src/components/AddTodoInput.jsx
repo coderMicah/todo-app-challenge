@@ -14,8 +14,10 @@ function AddTodoInput() {
 
   function handleBlur(event) {
     event.preventDefault();
-    dispatch({ type: "ADD_TODO", payload: event.target.value });
-    event.target.value = "";
+    if (event.target.value.trim() !== "") {
+      dispatch({ type: "ADD_TODO", payload: event.target.value });
+      event.target.value = "";
+    }
   }
 
   function handleClick() {
