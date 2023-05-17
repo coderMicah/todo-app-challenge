@@ -8,8 +8,8 @@ function TodoList({ todo }) {
     <li
       className={
         todo.isCompleted
-          ? "flex items-center p-4 w-full bg-gray-900 text-gray-600 border-b border-gray-600 line-through decoration-gray-500 "
-          : "flex items-center p-4 w-full bg-gray-900 text-gray-300 border-b border-gray-600"
+          ? "flex items-center p-4 w-full bg-[#fafafa] text-[#d2d3db] border-b border-2 border-[#484b6a ] line-through decoration-[#d2d3db] dark:bg-[#25273c] dark:text-[#4d5066] dark:decoration-[#4d5066]  dark:border-[#393a4c] "
+          : "flex items-center p-4 w-full bg-[#fafafa] text-[#484b6a] border-b border-2 border-[#484b6a ] dark:bg-[#25273c] dark:border-[#393a4c] dark:text-[#cacde8] hover:text-[#e4e5f1]"
       }
     >
       <button
@@ -19,12 +19,12 @@ function TodoList({ todo }) {
         className={
           todo.isCompleted
             ? "border rounded-full p-1 bg-gradient-to-br from-[#57ddff] to-[#c058f3] "
-            : "border rounded-full p-1 border-gray-600"
+            : "border border-[#d2d3db]  rounded-full p-1 dark:border-[#4d5066]"
         }
       >
         <img
           className={todo.isCompleted ? "h-3 w-3" : "opacity-0"}
-          src="../../src/assets/icon-check.svg"
+          src="/icon-check.svg"
           alt=""
         />
       </button>
@@ -41,7 +41,7 @@ function TodoList({ todo }) {
       <img
         onClick={() => dispatch({ type: "DELETE_TODO", payload: todo.id })}
         className="hidden sm:block ml-auto h-4"
-        src="../../src/assets/icon-cross.svg"
+        src="/icon-cross.svg"
         alt=""
       />
     </li>
