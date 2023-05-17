@@ -43,8 +43,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [github](https://github.com/coderMicah/todo-app-challenge)
+- Live Site URL: [micah-todo-app.netlify.app](https://micah-todo-app.netlify.app/)
 
 ## My process
 
@@ -70,7 +70,7 @@ Practised context and reducers to create a simple state management.Experienced w
 
 ## Author
 
-- Website - [micah](https://www.your-site.com)
+
 - Frontend Mentor - [@coderMicah](https://www.frontendmentor.io/profile/coderMicah)
 - Twitter - [@_micahcodes](https://www.twitter.com/_micahcodes)
 
