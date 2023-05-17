@@ -2,15 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .darkImg{
-    @apply hidden
+
+
+@layer base {
+  html {
+    font-family: "Josefin Sans", sans-serif;
   }
-  @media (prefers-color-scheme: dark) {
-    @media (min-width: 640px) {
-      .darkImg {
-        @apply block
-      }
-    }
+  body {
+    @apply dark:bg-[#161722] bg-[#e4e5f1];
   }
 }

@@ -5,12 +5,7 @@ import { statusReducer } from "../reducers/statusReducer";
 const TodoContext = createContext();
 
 const TodoContextProvider = ({ children }) => {
- 
-  const [todos, dispatch] = useReducer(todoReducer, [
-    { id:1, todo: "Walk The Dog", isActive: false, isCompleted: true },
-    { id:2, todo: "Pickup kids from school", isActive: true, isCompleted: false },
-    { id:3, todo: "Learn Java", isActive: false, isCompleted: true },
-  ]);
+  const [todos, dispatch] = useReducer(todoReducer, []);
   const [status, dispatchStatus] = useReducer(statusReducer, {
     isActive: false,
     isCompleted: false,

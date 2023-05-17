@@ -4,11 +4,13 @@ function CustomImage() {
     <div>
       <img
         className="w-full h-[150px] xs:h-[300px] z-0 hidden dark:block "
+        loading="lazy"
         src="/bg-desktop-dark.jpg"
         alt=""
       />
       <img
         className="w-full h-[150px] xs:h-[300px] z-0 block dark:hidden "
+        loading="lazy"
         src="/bg-desktop-light.jpg"
         alt=""
       />

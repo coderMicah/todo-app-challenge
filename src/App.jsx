@@ -11,15 +11,12 @@ function App() {
     <div className="mx-auto">
       <TodoContextProvider>
         <div className="bg-[#e4e5f1] h-screen dark:bg-[#161722]">
-        <CustomImage/>
+          <CustomImage />
 
           <div className="mx-auto relative -my-32 xs:-my-60 px-4 max-w-2xl z-10">
             <AddTodoInput />
             <TodoLayout />
             <Togglers />
-            <p className="mt-5 text-center text-[#9394a5] dark:text-[#4d5066]">
-              Drag and drop to reorder list
-            </p>
           </div>
         </div>
       </TodoContextProvider>

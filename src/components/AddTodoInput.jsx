@@ -12,6 +12,12 @@ function AddTodoInput() {
     }
   }
 
+  function handleBlur(event) {
+    event.preventDefault();
+    dispatch({ type: "ADD_TODO", payload: event.target.value });
+    event.target.value = "";
+  }
+
   function handleClick() {
     // if set via local storage previously
     if (localStorage.getItem("color-theme")) {
@@ -59,6 +65,7 @@ function AddTodoInput() {
         type="text"
         placeholder="Create a new todo ..."
         onKeyUp={(e) => handleKeyUp(e)}
+        onBlur={(e) => handleBlur(e)}
       />
     </>
   );
